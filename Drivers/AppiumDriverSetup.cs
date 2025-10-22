@@ -49,7 +49,7 @@ namespace iHaul.Reqnroll.Drivers
             // App info
             options.AddAdditionalAppiumOption("app", "bs://sample.app");
 
-            // Device info (you can parameterize these later)
+            // Device info (you can parameterize these later)//for the Browserstack integration
             options.AddAdditionalAppiumOption("platformName", "android");
             options.AddAdditionalAppiumOption("deviceName", "Samsung Galaxy S22 Ultra");
             options.AddAdditionalAppiumOption("platformVersion", "12.0");
