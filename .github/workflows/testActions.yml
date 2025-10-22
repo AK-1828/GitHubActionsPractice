@@ -16,36 +16,41 @@ jobs:
       BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
 
     steps:
+      # Step 1: Checkout repository code
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # Step 2: Setup .NET SDK
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
+      # Step 3: Restore dependencies for the solution
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore MobileAutomation.sln
 
+      # Step 4: Build the solution in Release mode
       - name: Build the project
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build MobileAutomation.sln --configuration Release --no-restore
 
+      # Step 5: Setup Node.js (for Appium CLI if needed)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
 
-      # Install Appium CLI (not strictly required if only using BrowserStack)
+      # Step 6: Install Appium CLI and BrowserStack driver
       - name: Install Appium and BrowserStack driver
         run: |
           npm install -g appium
           appium driver install uiautomator2
 
-      # ✅ Run Appium C# Tests on BrowserStack
+      # Step 7: Run Appium C# tests on BrowserStack
       - name: Run tests on BrowserStack
-        run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=test_results.trx"
+        run: dotnet test iHaul.csproj --configuration Release --no-build --logger "trx;LogFileName=test_results.trx"
 
-      # Upload reports
+      # Step 8: Upload test results as artifacts
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
         with:
