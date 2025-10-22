@@ -1,0 +1,27 @@
+# Ignore Allure reports
+Allure-HTML-Reports/
+Allure-Reports/
+Resources/
+# Ignore bin folder
+bin/
+
+# Ignore specific files
+runTests.bat
+run_counter.txt
+
+obj/
+
+# Ignore Visual Studio temporary files, build results, and cache
+.vs/
+bin/
+obj/
+TestResults/
+*.user
+*.suo
+*.cache
+*.log
+*.vsidx
+*.vssscc
+*.db
+*.db-shm
+*.db-wal

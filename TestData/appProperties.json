@@ -1,0 +1,15 @@
+{
+  "AppPath": "Resources/app-release-v115.apk",
+  // "EmulatorName": "AKEmulator",
+  "AutomationName": "UiAutomator2",
+  "ChromeDriverPath": "Resources/chromedriver.exe",
+  "DeviceName": "10BF1E1C0U004ZK",
+  "MailSurpAPIKey": "0116ab9303a5af403a702153bea89eb03db40e1adae5aac0e13af4e7ac085ed0",
+  "MobileWebUrl": "https://askomdch.com/",
+  "PlatformName": "Android",
+  "PackageName": "com.iray.i_haul",
+  "PhotoPath": "Resources/iHaulIploadPic.png",
+  "DevicePhotoPath": "sdcard/DCIM/Camera/upload_image.jpg",
+  "YopmailPrefix": "ak45test"
+
+}

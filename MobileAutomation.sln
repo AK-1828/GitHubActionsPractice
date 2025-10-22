@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iHaul", "iHaul.csproj", "{C5DEFC1C-F662-4B9D-8432-D58F38FAC631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler", "Scheduler\Scheduler.csproj", "{D35814D5-5531-4BA8-8EB2-D3147ED3CB4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5DEFC1C-F662-4B9D-8432-D58F38FAC631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DEFC1C-F662-4B9D-8432-D58F38FAC631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DEFC1C-F662-4B9D-8432-D58F38FAC631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DEFC1C-F662-4B9D-8432-D58F38FAC631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35814D5-5531-4BA8-8EB2-D3147ED3CB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35814D5-5531-4BA8-8EB2-D3147ED3CB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35814D5-5531-4BA8-8EB2-D3147ED3CB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35814D5-5531-4BA8-8EB2-D3147ED3CB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AC6493F-99E9-4DAA-A806-8A4A8506FD08}
+	EndGlobalSection
+EndGlobal
