@@ -38,9 +38,9 @@ namespace iHaul.Hooks
            
            StartAppiumServer();
 
-           // EmulatorLauncher.StartEmulator(emulatorName);
+            // EmulatorLauncher.StartEmulator(emulatorName);
             //AppiumDriverSetup.InitializeDriver("chrome", webUrl);
-          launchApp("app");
+            LaunchApp("app");
           Initialize(mailSurpApiKey);
 
 

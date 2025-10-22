@@ -11,7 +11,7 @@ namespace MobileAutomation.StepDefinitions
         [Given("launch the i-Haul app")]
         public void GivenLaunchTheI_HaulApp()
         {
-          //  launchApp("app");
+           LaunchApp("app");
             Thread.Sleep(5000);
         }
     }
