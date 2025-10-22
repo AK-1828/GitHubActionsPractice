@@ -49,7 +49,7 @@ namespace iHaul.Reqnroll.Drivers
             // App info
             options.AddAdditionalAppiumOption("app", "bs://sample.app");
 
-            // Device info (you can parameterize these later)///Now it is serious
+            // Device info (you can parameterize these later)
             options.AddAdditionalAppiumOption("platformName", "android");
             options.AddAdditionalAppiumOption("deviceName", "Samsung Galaxy S22 Ultra");
             options.AddAdditionalAppiumOption("platformVersion", "12.0");
